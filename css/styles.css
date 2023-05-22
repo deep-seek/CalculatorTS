@@ -28,7 +28,7 @@ body {
   box-shadow: 15px 10px #3f2817;
 }
 
-.calculator-display {
+#calculator-display {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
