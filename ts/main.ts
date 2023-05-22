@@ -19,6 +19,8 @@ keywords.forEach((keyword) => {
 
 class Calculator {
   public static display(value: string) {
+    if (value === ".") return;
+
     display.innerHTML += value;
   }
 
@@ -31,6 +33,10 @@ class Calculator {
     display.innerHTML = result.toString();
   }
 
+  public static del() {
+    display.toString().slice(0, -1);
+  }
+
   public static buttonClick(value: string) {
     switch(value) {
       case "=":
@@ -38,6 +44,9 @@ class Calculator {
         break;
       case "C":
         this.clearDisplay();
+        break;
+      case "←":
+        this.del();
         break;
       default:
         this.display(value);
