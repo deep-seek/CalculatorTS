@@ -1,2 +1,5 @@
 # Configuration Files
 tsconfig.json
+
+# Connection
+.obsidian
